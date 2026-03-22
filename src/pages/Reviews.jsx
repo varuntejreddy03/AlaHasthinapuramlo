@@ -3,12 +3,8 @@ import useScrollReveal from '../components/useScrollReveal'
 import VideoPlayer from '../components/VideoPlayer'
 import { LotusOrnament, WavyDivider } from '../components/SvgAssets'
 
-/* ── Customer review video ── */
-const customerVideoMod = import.meta.glob(
-  '/public/videos/sainath_ramachandhraa_*.mp4',
-  { eager: true, query: '?url', import: 'default' }
-)
-const CUSTOMER_VIDEO = Object.values(customerVideoMod)[0] ?? null
+/* ── Customer review video — plain path served from public/videos/ ── */
+const CUSTOMER_VIDEO = '/videos/sainath_ramachandhraa_1773377006_3851687409121814077_6060227238.mp4'
 
 function StarRating({ count, size = 16 }) {
   return (

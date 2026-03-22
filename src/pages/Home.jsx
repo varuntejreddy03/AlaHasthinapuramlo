@@ -9,8 +9,8 @@ import {
   TempleSketch, PalmSketch, WHY_ICONS,
 } from '../components/SvgAssets'
 
-/* ── Specific customer review video for hero ── */
-import HERO_REVIEW_VIDEO from '/videos/ala_hasthinapuramlo_1772065822_3840688097005280059_80293953347.mp4?url'
+/* ── Hero review video — served from public/videos/ ── */
+const HERO_REVIEW_VIDEO = '/videos/ala_hasthinapuramlo_1772065822_3840688097005280059_80293953347.mp4'
 
 /* ── Avatar placeholder colours for rating card ── */
 const AVATAR_COLORS = ['#E65100', '#1B5E20', '#1565C0']

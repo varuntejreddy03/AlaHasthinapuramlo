@@ -4,9 +4,13 @@ import useScrollReveal from '../components/useScrollReveal'
 import VideoPlayer from '../components/VideoPlayer'
 import { LotusOrnament, WavyDivider } from '../components/SvgAssets'
 
-/* ── Sorted restaurant videos (first 4) ── */
-const rawVideos = import.meta.glob('/public/videos/ala_hasthinapuramlo_*.mp4', { eager: true, query: '?url', import: 'default' })
-const RESTAURANT_VIDEOS = Object.keys(rawVideos).sort().slice(0, 4).map(k => rawVideos[k])
+/* ── Restaurant videos — plain paths served from public/videos/ ── */
+const RESTAURANT_VIDEOS = [
+  '/videos/ala_hasthinapuramlo_1770906664_3830964621029850272_80293953347.mp4',
+  '/videos/ala_hasthinapuramlo_1771463042_3835631334933543294_80293953347.mp4',
+  '/videos/ala_hasthinapuramlo_1771809684_3838539390675732108_80293953347.mp4',
+  '/videos/ala_hasthinapuramlo_1772065822_3840688097005280059_80293953347.mp4',
+]
 
 const VIDEO_LABELS = [
   'Our Special Chicken Pulav 🍗',
