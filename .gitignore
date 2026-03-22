@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Video files — too large for GitHub (serve locally from public/videos/)
-public/videos/*.mp4
+# public/videos/*.mp4
